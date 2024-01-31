@@ -39,4 +39,50 @@ nav a {
   padding: 2rem 1rem;
   font-size: 1.2rem;
   text-wrap: nowrap;
+  border: 2px solid black;
+}
+
+nav a:hover {
+  background: white;
+  color: black;
+}
+
+/* Main */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.container h2 {
+  font-size: 6rem;
+  margin-bottom: 2rem;
+}
+
+/* Forms */
+
+form {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.75rem;
+  width: 500px;
+}
+
+form input,
+form button {
+  margin: 0 0 1rem 0;
+  padding: 1.75rem;
+  font-size: 1.5rem;
+  background: black;
+  color: white;
+  border: none;
+  border: 2px solid black;
+}
+
+form button:hover {
+  background: white;
+  color: black;
 }

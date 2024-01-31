@@ -3,10 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Header from "./components/Header";
-
-function Login() {
-  return <h2>Login</h2>;
-}
+import Login from "./components/Login";
 
 function FriendList() {
   return <h2>Friend List</h2>;
@@ -24,6 +21,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <Login />
     </div>
   );
 }
