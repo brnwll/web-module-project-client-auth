@@ -5,8 +5,4 @@ import App from "./App";
 
 const root = createRoot(document.getElementById("root"));
 
-root.render(
-  <Router>
-    <App />
-  </Router>
-);
+root.render(<App />);
