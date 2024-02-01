@@ -9,11 +9,7 @@ import {
 
 import Header from "./components/Header";
 import Login from "./components/Login";
-//import FriendList from "./components/FriendList";
-
-function FriendList() {
-  return <h2>Friend List</h2>;
-}
+import FriendList from "./components/FriendList";
 
 function AddFriend() {
   return <h2>Add Friend</h2>;
