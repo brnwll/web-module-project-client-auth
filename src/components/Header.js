@@ -8,7 +8,7 @@ function Header() {
       <nav>
         <Link to="/login">Login.</Link>
         <Link to="/friends">FriendList.</Link>
-        <Link to="/add">AddFriend.</Link>
+        <Link to="/friends/add">AddFriend.</Link>
         <Link to="/logout">Logout</Link>
       </nav>
     </header>

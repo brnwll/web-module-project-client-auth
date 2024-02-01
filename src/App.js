@@ -10,10 +10,7 @@ import {
 import Header from "./components/Header";
 import Login from "./components/Login";
 import FriendList from "./components/FriendList";
-
-function AddFriend() {
-  return <h2>Add Friend</h2>;
-}
+import AddFriend from "./components/AddFriend";
 
 function Logout() {
   return <h2>Logout</h2>;
@@ -36,7 +33,10 @@ function App() {
             path="/friends"
             element={<Protected element={<FriendList />} />}
           />
-          <Route path="/add" element={<Protected element={<AddFriend />} />} />
+          <Route
+            path="/friends/add"
+            element={<Protected element={<AddFriend />} />}
+          />
           <Route path="/logout" element={<Logout />} />
         </Routes>
       </div>
