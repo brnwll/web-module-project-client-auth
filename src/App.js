@@ -23,8 +23,8 @@ function Logout() {
   return <h2>Logout</h2>;
 }
 
-function isAuthed() {
-  return localStorage.getItem("token");
+function Protected({ element }) {
+  return !localStorage.getItem("token") ? <Navigate to="/login" /> : element;
 }
 
 function App() {
@@ -38,12 +38,9 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route
             path="/friends"
-            element={isAuthed() ? <FriendList /> : <Navigate to="/login" />}
+            element={<Protected element={<FriendList />} />}
           />
-          <Route
-            path="/add"
-            element={isAuthed() ? <AddFriend /> : <Navigate to="/login" />}
-          />
+          <Route path="/add" element={<Protected element={<AddFriend />} />} />
           <Route path="/logout" element={<Logout />} />
         </Routes>
       </div>
