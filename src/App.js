@@ -11,10 +11,7 @@ import Header from "./components/Header";
 import Login from "./components/Login";
 import FriendList from "./components/FriendList";
 import AddFriend from "./components/AddFriend";
-
-function Logout() {
-  return <h2>Logout</h2>;
-}
+import Logout from "./components/Logout";
 
 function Protected({ element }) {
   return !localStorage.getItem("token") ? <Navigate to="/login" /> : element;
