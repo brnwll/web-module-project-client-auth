@@ -21,6 +21,7 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
+        <Route path="/" element={<Login />} />
         <Route path="/login" element={<Login />} />
         <Route path="/friends" element={<FriendList />} />
         <Route path="/add" element={<AddFriend />} />

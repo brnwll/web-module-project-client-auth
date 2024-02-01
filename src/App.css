@@ -1,3 +1,8 @@
+/* All app styles are here because this is a small project
+    and it's easier to manage all styles in one place */
+
+/* Reset */
+
 * {
   text-transform: uppercase;
   font-family: Lato, sans-serif;
@@ -82,7 +87,17 @@ form button {
   border: 2px solid black;
 }
 
+form input {
+  text-transform: none;
+}
+
 form button:hover {
   background: white;
   color: black;
+}
+
+form button:disabled {
+  background: black;
+  color: white;
+  text-decoration: line-through;
 }
