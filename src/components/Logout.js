@@ -9,11 +9,11 @@ function Logout() {
       .post("/logout")
       .then(() => {
         localStorage.removeItem("token");
-        navigate("/");
       })
       .catch((err) => {
         console.error(err);
       });
+    navigate("/");
   }, [navigate]);
   return null;
 }
